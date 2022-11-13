@@ -206,3 +206,44 @@ footer {
   font-size: 50px;
   font-family: "Noe Display", sans-serif;
 }
+
+.utleieTekst {
+  width: 60%;
+  margin: auto;
+}
+.utleieTekst h1 {
+  font-size: 50px;
+  font-family: "Noe Display", sans-serif;
+}
+.utleieTekst p {
+  font-size: 20px;
+}
+
+.utleieTable {
+  margin: auto;
+}
+.bottomInputUtleieTable {
+  margin: auto;
+}
+#commentField {
+  width: 100%;
+}
+.utleieTable td input {
+  width: 95%;
+  margin: auto;
+  height: 25px;
+}
+
+.utleieSubmit {
+  width: 60%;
+  margin: auto;
+}
+
+.utleieSubmit input {
+  margin-left: 85%;
+  outline: 1px solid black;
+}
+#utleieSubmitDiv {
+  padding: 2px;
+  border: 1px solid #cc7722;
+}
