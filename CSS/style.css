@@ -7,7 +7,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-color: #f8f1ec;
+  background-color: #fffdfb;
   color: #231f20;
   font-family: "Questa Sans", sans-serif;
 }
@@ -102,13 +102,13 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  margin-bottom: 250px;
 }
 .secondArtColumn {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin-top: 100px;
-  margin-bottom: 150px;
+  margin-top: 300px;
 }
 
 .kunst {
@@ -117,10 +117,10 @@ footer {
   justify-content: space-around;
 }
 
-.kunstBilde {
+#kunstBilde {
   width: 100%;
 }
-.kunstBilde:hover {
+#kunstBilde:hover {
   opacity: 0.7;
 }
 .popup {
@@ -199,7 +199,7 @@ footer {
 .artText {
   width: 90%;
   margin: auto;
-  margin-bottom: 150px;
+  margin-bottom: 0px;
   font-size: 20px;
 }
 .artText h1 {
