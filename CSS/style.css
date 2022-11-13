@@ -207,26 +207,35 @@ footer {
   font-family: "Noe Display", sans-serif;
 }
 
-.utleieTekst {
+.utleieText {
   width: 60%;
   margin: auto;
 }
-.utleieTekst h1 {
+.utleieText h1 {
   font-size: 50px;
   font-family: "Noe Display", sans-serif;
 }
-.utleieTekst p {
+.utleieText p {
   font-size: 20px;
 }
 
 .utleieTable {
   margin: auto;
 }
+
+.utleieTable b {
+  font-family: "Noe Display", sans-serif;
+}
 .bottomInputUtleieTable {
   margin: auto;
 }
+
+.bottomInputUtleieTable b {
+  font-family: "Noe Display", sans-serif;
+}
+
 #commentField {
-  width: 100%;
+  width: 98%;
 }
 .utleieTable td input {
   width: 95%;
@@ -241,9 +250,9 @@ footer {
 
 .utleieSubmit input {
   margin-left: 85%;
-  outline: 1px solid black;
-}
-#utleieSubmitDiv {
-  padding: 2px;
-  border: 1px solid #cc7722;
+  border: 0.7px solid #231f20;
+  border-radius: 0px;
+  background-color: transparent;
+  padding: 10px 30px;
+  box-shadow: -6px 6px 0 0 #fffdfb, -6px 6px 0 0.7px #cc7722;
 }
