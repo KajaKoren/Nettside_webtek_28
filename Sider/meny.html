@@ -8,9 +8,18 @@
 			content="width=device-width, initial-scale=1, minimum-scale=1"
 		/>
 		<link rel="stylesheet" href="../CSS/style.css" />
+		<link rel="icon" type="image/x-icon" href="../Bilder/logo_cafe.svg" />
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"
+			integrity="sha512-r22gChDnGvBylk90+2e/ycr3RVrDi8DIOkIGNhJlKfuyQM4tIRAI062MaV8sfjQKYVGjOBaZBOA87z+IhZE9DA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
 	</head>
-	<body>
-		<img class="toplogo" src="../Bilder/logo_cafe.png" alt="logo cafe" />
+	<body
+		onload="excelToHTML('../Excel/Lunsj.xlsx', '.menyLunsj'); excelToHTML('../Excel/Hjemmelaga_sandwich.xlsx', '.menySandwichBread'); excelToHTML('../Excel/Salat.xlsx', '.menySalad'); excelToHTML('../Excel/Sandwich.xlsx', '.menySandwich'); excelToHTML('../Excel/Vaffel.xlsx', '.menyWaffel')"
+	>
+		<img class="toplogo" src="../Bilder/logo_cafe.svg" alt="logo cafe" />
 		<nav>
 			<ul class="topnav">
 				<li id="forside">
@@ -39,38 +48,92 @@
 				</li>
 			</ul>
 		</nav>
-		<h1>HEI HER BEGYNNER SIDEN</h1>
-		<p>legg inn text</p>
-		<h1>HER SLUTTER SIDEN</h1>
+		<div class="menuContainer">
+			<div class="menyBox">
+				<div id="menyLunsj" class="menyLunsj">
+					<h2 id="menyOverskrift" class="menyOverskrift">Meny</h2>
+					<h3 class="menyOverskrift">Lunsj</h3>
+				</div>
+				<img
+					src="../Icons/Menu/bread_1.svg"
+					alt="bread and cheese"
+					class="breadCheese"
+				/>
+			</div>
+			<div class="menyBox">
+				<div>
+					<div id="menySandwichBread" class="menySandwichBread">
+						<h3 class="menyOverskrift">Hjemmelaga sandwichbrød</h3>
+					</div>
+				</div>
+				<img src="../Icons/Menu/bread_2.svg" alt="bread" class="bread" />
+			</div>
+			<div class="menyBox">
+				<div id="menySalad" class="menySalad">
+					<h3 class="menyOverskrift">Salat</h3>
+				</div>
+				<img
+					src="../Icons/Menu/vegetables.svg"
+					alt="picture of vegetables"
+					class="vegetables"
+				/>
+			</div>
+			<div class="menyBox">
+				<div id="menySandwich" class="menySandwich">
+					<h3 class="menyOverskrift">Smørbrød</h3>
+				</div>
+			</div>
+			<div class="menyBox">
+				<div id="menyWaffel" class="menyWaffel">
+					<h3 class="menyOverskrift">Vaffel</h3>
+				</div>
+			</div>
+			<div class="menyBox">
+				<p>
+					Gluten, 2. Melk, 3. Egg, 4. Fish, 5. Skalldyr, 6. Peanøtter, 7.
+					Nøtter, 8. Soyabønner, 9.Selleri, 10. Sennep, 11. Sesamfrø, 12.
+					Sulfitt, 13. Lupiner, 14. Bløtdyr
+				</p>
+			</div>
+		</div>
+
 		<div class="wrapper">
 			<footer>
 				<div class="footerclass">
-					<div class="apningstider">
-						<p>Åpningstider</p>
-						<p>Man - fre 11.00 - 19.00</p>
-						<p>Lør - søn 12.00 - 18.00</p>
-					</div>
-					<div class="sosialeMedier">
-						<a
-							href="https://www.instagram.com/explore/locations/326713303/fru-svendsen-kunst-og-kulturkafe/"
-							><img
-								class="socialmedia"
-								src="../Icons/instagram.png"
-								alt="instagram"
-						/></a>
-						<a href="https://www.facebook.com/profile.php?id=100028706001486"
-							><img
-								class="socialmedia"
-								src="../Icons/facebook.png"
-								alt="facebook"
-						/></a>
-						<a href="mailto:kaja.koren.97@gmail.com?Subject=MailFromWebsite"
-							><img class="socialmedia" src="../Icons/email.png" alt="email"
-						/></a>
+					<div class="footbox1">
+						<div class="footertext">
+							<h3>KONTAKT OSS</h3>
+							<p>Tlf: 997 01 635</p>
+							<p>Email: frusvendsenkafe@gmail.com</p>
+						</div>
+						<div class="sosialeMedier">
+							<a
+								href="https://www.instagram.com/explore/locations/326713303/fru-svendsen-kunst-og-kulturkafe/"
+								><img
+									class="socialMedia"
+									src="../Icons/insta.svg"
+									alt="instagram"
+							/></a>
+							<a href="https://www.facebook.com/profile.php?id=100028706001486"
+								><img
+									class="socialMedia"
+									src="../Icons/facebook.svg"
+									alt="facebook"
+							/></a>
+							<a href="mailto:kaja.koren.97@gmail.com?Subject=MailFromWebsite"
+								><img
+									class="tripAdvisor"
+									src="../Icons/Trip_advisor.svg"
+									alt="Trip Advisor"
+							/></a>
+						</div>
 					</div>
 				</div>
 				<div class="footerclass">
-					<img class="iconBottom" src="../Bilder/logo.png" alt="logo cafe" />
+					<div class="apningstider">
+						<h3>ÅPNINGSTIDER</h3>
+						<p>Man - lør 11.00 - 16.00</p>
+					</div>
 				</div>
 				<div class="footerclass">
 					<div id="map"></div>
@@ -82,5 +145,47 @@
 			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
 			defer
 		></script>
+		<script>
+			function excelToHTML(dataPath, id) {
+				let table = document.querySelector(id);
+				(async () => {
+					let workbook = XLSX.read(await (await fetch(dataPath)).arrayBuffer());
+					let worksheet = workbook.SheetNames;
+					worksheet.forEach((name) => {
+						var sheet_data = XLSX.utils.sheet_to_json(workbook.Sheets[[name]], {
+							header: 1,
+						});
+
+						if (sheet_data.length > 0) {
+							var table_output = '<table class="menuTable">';
+							for (var row = 1; row < sheet_data.length; row++) {
+								table_output += '<tr">';
+
+								for (var cell = 0; cell < sheet_data[row].length; cell++) {
+									if (cell == 0) {
+										table_output +=
+											"<td class=menuItems>" + sheet_data[row][cell];
+									} else if (cell == 1) {
+										table_output +=
+											"  " + sheet_data[row][cell] + ",-" + "</td>";
+									} else {
+										table_output +=
+											"<tr>" +
+											'<td class="menuDescription">' +
+											sheet_data[row][cell] +
+											"</td>" +
+											"</tr>";
+									}
+								}
+
+								table_output += "</tr>";
+							}
+							table_output += "<table>";
+							table.innerHTML += table_output;
+						}
+					});
+				})();
+			}
+		</script>
 	</body>
 </html>
