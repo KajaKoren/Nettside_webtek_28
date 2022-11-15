@@ -1,6 +1,5 @@
 @import url("http://fonts.cdnfonts.com/css/questa-sans");
 @import url("http://fonts.cdnfonts.com/css/noe-display");
-@import url(https://fonts.googleapis.com/css?family=Raleway);
 
 /* Add a black background color to the top navigation */
 html,
@@ -416,7 +415,10 @@ h2.menyOverskrift {
 	padding-top: 20px;
 	margin-bottom: 10px;
 }
-
+h3.menyOverskrift {
+	margin-bottom: 0;
+	padding-top: 20px;
+}
 .menuContainer {
 	width: 100%;
 	display: flex;
@@ -435,6 +437,12 @@ h2.menyOverskrift {
 	text-align: end;
 	flex-direction: row-reverse;
 }
+.menyBox:nth-last-child(2) {
+	display: flex;
+	margin: 20px;
+	justify-content: space-between;
+	flex-direction: row;
+}
 .menyBox:last-child {
 	padding-top: 30px;
 	text-align: center;
@@ -443,7 +451,10 @@ h2.menyOverskrift {
 	font-weight: 100;
 	padding-bottom: 10px;
 }
-
+.menyHotBeverage {
+	display: flex;
+	flex-direction: column;
+}
 div#menySandwichBread {
 	width: 100%;
 }
@@ -453,6 +464,10 @@ div#menyLunsj {
 div#menySalad {
 	width: 100%;
 }
+div#menyCoffee {
+	text-align: left;
+}
+
 div#Sandwich {
 	width: 100%;
 }
@@ -469,22 +484,28 @@ div#Sandwich {
 }
 .menuItems {
 	font-weight: 700;
+	padding-top: 12px;
 }
 .menuDescription {
 	font-size: 16px;
 	font-weight: 100;
 	font-style: italic;
-	padding-bottom: 10px;
 }
 @media screen and (max-width: 800px) {
 	.menyBox {
 		width: 100%;
-		margin-left: 15%;
+		padding-left: 5%;
 	}
 	.menyBox:nth-child(2n) {
 		flex-direction: row;
 		text-align: left;
 	}
+	.menyBox:nth-last-child(2) {
+		flex-direction: column;
+		text-align: left;
+		justify-content: flex-start;
+	}
+
 	h2.menyOverskrift {
 		margin-left: -15%;
 	}
@@ -498,6 +519,9 @@ div#Sandwich {
 		display: none;
 	}
 	#map {
+		display: none;
+	}
+	.coffeemug {
 		display: none;
 	}
 }
