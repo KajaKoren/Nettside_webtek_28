@@ -488,4 +488,7 @@ div#Sandwich {
 	.vegetables {
 		display: none;
 	}
+	#map {
+		display: none;
+	}
 }
