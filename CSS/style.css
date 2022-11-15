@@ -70,7 +70,10 @@ body {
 	.logotop {
 		width: 60px;
 		display: block;
+		margin-left: 15%;
+		margin-top: 25px;
 	}
+
 	h2 {
 		vertical-align: center;
 		text-align: center;
@@ -132,6 +135,8 @@ body {
 		display: none;
 		height: 100%;
 		width: 30px;
+		margin-right: 3%;
+		margin-top: 15px;
 		cursor: pointer;
 		flex-direction: column;
 		justify-content: center;
@@ -148,8 +153,8 @@ body {
 		display: block;
 		background-color: #cc7722;
 		position: absolute;
-		height: 4px;
-		width: 30px;
+		height: 1px;
+		width: 35px;
 		transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
 		border-radius: 3px;
 	}
@@ -474,10 +479,14 @@ div#Sandwich {
 @media screen and (max-width: 800px) {
 	.menyBox {
 		width: 100%;
+		margin-left: 15%;
 	}
 	.menyBox:nth-child(2n) {
 		flex-direction: row;
 		text-align: left;
+	}
+	h2.menyOverskrift {
+		margin-left: -15%;
 	}
 	.breadCheese {
 		display: none;
