@@ -6,7 +6,7 @@ navbarHTML = `
     <a href="forside.html">Forside</a>
   </li>
   <li id="meny">
-    <a class="active" href="meny.html">Meny</a>
+    <a href="meny.html">Meny</a>
   </li>
   <li id="arrangement">
     <a href="arrangement.html">Arrangement</a>
