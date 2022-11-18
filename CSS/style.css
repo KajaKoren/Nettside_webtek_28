@@ -221,3 +221,43 @@ footer {
   font-size: 50px;
   font-family: "Noe Display", sans-serif;
 }
+
+/*BILDER*/
+
+.imageContainer {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.imageRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.imageRow img {
+  height: 590px;
+  margin: 20px;
+}
+
+.imageText {
+  width: 95%;
+  margin: 20px;
+  padding: 20px;
+  font-family: "Noe Display", sans-serif;
+}
+
+@media only screen and (max-width: 1400px) {
+  .imageRow {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+  }
+  .miniPicture {
+    width: 388px;
+  }
+}
