@@ -36,6 +36,74 @@ p {
   font-size: 18px;
 }
 
+/*-----------------------------------------FOOTER STYLING----------------------------------------------------*/
+footer {
+  background-color: #231f20;
+  color: #fffdfb;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: absolute;
+  width: 100vw;
+  height: 213px;
+  margin: 0px;
+}
+.footerclass {
+  width: 100%;
+  height: 100%;
+  color: #d2d2d2;
+  font-family: "Questa Sans", sans-serif;
+  align-items: center;
+  align-content: center;
+  text-align: left;
+}
+.footertext p {
+  margin: 3px;
+}
+.footertext h3 {
+  font-size: 17px;
+  font-weight: 300;
+  margin-bottom: 7px;
+  margin-top: 10%;
+  font-family: "Questa Sans", sans-serif;
+}
+.footbox1 {
+  padding-left: 70px;
+}
+.apningstider {
+  padding-left: 70px;
+}
+.apningstider h3 {
+  font-size: 17px;
+  font-weight: 300;
+  margin-bottom: 7px;
+  margin-top: 10%;
+  font-family: "Questa Sans", sans-serif;
+}
+.apningstider p {
+  margin: 3px;
+}
+
+.socialMedia {
+  width: 24px;
+  margin-top: 4%;
+  margin-left: 2%;
+}
+.tripAdvisor {
+  width: 30px;
+  margin-top: 4%;
+  margin-left: 2%;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+.iconBottom {
+  height: 100%;
+}
 /*-------------------------------------------NAVBAR STYLING--------------------------------------------------*/
 .mobile-top-nav {
   display: none;
@@ -47,6 +115,7 @@ p {
   overflow: hidden;
   justify-content: center;
   text-align: center;
+  padding: 0px;
 }
 
 /* Style the links inside the navigation bar */
@@ -83,6 +152,7 @@ p {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 10px;
 }
 @media screen and (max-width: 900px) {
   .topnav {
@@ -241,74 +311,7 @@ p {
     }
   }
 }
-
-footer {
-  background-color: #231f20;
-  color: #fffdfb;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  position: absolute;
-  width: 100vw;
-  height: 213px;
-  margin: 0px;
-}
-.footerclass {
-  width: 100%;
-  height: 100%;
-  color: #d2d2d2;
-  font-family: "Questa Sans", sans-serif;
-  align-items: center;
-  align-content: center;
-  text-align: left;
-}
-.footertext p {
-  margin: 3px;
-}
-.footertext h3 {
-  font-size: 17px;
-  font-weight: 300;
-  margin-bottom: 7px;
-  margin-top: 10%;
-  font-family: "Questa Sans", sans-serif;
-}
-.footbox1 {
-  padding-left: 70px;
-}
-.apningstider {
-  padding-left: 70px;
-}
-.apningstider h3 {
-  font-size: 17px;
-  font-weight: 300;
-  margin-bottom: 7px;
-  margin-top: 10%;
-  font-family: "Questa Sans", sans-serif;
-}
-.apningstider p {
-  margin: 3px;
-}
-
-.socialMedia {
-  width: 24px;
-  margin-top: 4%;
-  margin-left: 2%;
-}
-.tripAdvisor {
-  width: 30px;
-  margin-top: 4%;
-  margin-left: 2%;
-}
-
-#map {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-}
-.iconBottom {
-  height: 100%;
-}
+/*--------------------------------------------------KUNST PAGE---------------------------------------------------------------------*/
 .artWrapper {
   width: 90%;
   margin: auto;
@@ -333,6 +336,10 @@ footer {
 }
 
 .kunst {
+  width: 60%;
+  margin-top: 50px;
+
+  margin: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -428,7 +435,7 @@ footer {
   font-family: "Noe Display", sans-serif;
 }
 
-/*----------------------MENU PAGE -------------------------*/
+/*----------------------------------------------- MENU PAGE ------------------------------------------------*/
 .menyOverskrift {
   font-family: "Noe Display", sans-serif;
 }
@@ -546,12 +553,16 @@ div#Sandwich {
     display: none;
   }
 }
-/*-------------------HISTORY PAGE --------------------------*/
+/*---------------------------------------- HISTORY PAGE ---------------------------------------------*/
 .historyContainer {
+  width: 50%;
   display: flex;
-  margin: 20px;
+  margin: auto;
   margin-top: 50px;
   flex-direction: row;
+}
+.historyContainerMobileView {
+  display: none;
 }
 
 .historyBox {
@@ -562,7 +573,12 @@ div#Sandwich {
 }
 .historyBox:nth-child(2n) {
   width: 10%;
+  margin-top: 130px;
 }
+.historyBox:last-child {
+  margin-top: 130px;
+}
+
 .history {
   margin-top: 0;
   font-family: "Noe Display", sans-serif;
@@ -572,178 +588,23 @@ div#Sandwich {
   align-self: baseline;
 }
 .historyHouse {
-  width: 90%;
+  width: 100%;
 }
 .historyCafeTable {
-  width: 75%;
+  width: 90%;
 }
-
-/* -----------------------Slideshow-------------------------------------------*/
-/*
-essential styles:
-these make the slideshow work
-*/
-#slides {
-  position: relative;
-  height: 500px;
-  padding: 0px;
-  margin: 0px;
-  list-style-type: none;
-}
-
-.slide {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  z-index: 1;
-
-  -webkit-transition: opacity 1s;
-  -moz-transition: opacity 1s;
-  -o-transition: opacity 1s;
-  transition: opacity 1s;
-}
-
-.showing {
-  opacity: 1;
-  z-index: 2;
-}
-
-.controls {
-  display: none;
-}
-
-/*
-non-essential styles:
-just for appearance; change whatever you want
-*/
-.slidebox {
-  background-color: #ffff;
-
-  width: 400px;
-}
-.slide {
-  font-size: 40px;
-  padding: 40px;
-  box-sizing: border-box;
-  background: rgb(213, 193, 193);
-  color: #fff;
-
-  background-size: cover;
-}
-
-/* http://unrestrictedstock.com/wp-content/uploads/snowy-winter-vignette-bokeh-night-snow-falling-free-stock-photo.jpg */
-.slide:nth-of-type(1) {
-  background-color: #f5f1ec;
-  width: 100%;
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-/* http://www.dawghousedesignstudio.com/wp-content/uploads/2010/01/25/free-stock-photos-1.jpg */
-.slide:nth-of-type(2) {
-  background-color: orange;
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/free-stock-photos-1.jpg");
-}
-
-/* http://www.stockfreeimages.com/static/homepage/waterfall-free-stock-photo-244915.jpg */
-.slide:nth-of-type(3) {
-  background-color: green;
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/waterfall-free-stock-photo-244915.jpg");
-}
-
-.controls {
-  background: #333;
-  color: #fff;
-  border: none;
-  padding: 20px 0px;
-  font-size: 20px;
-  cursor: pointer;
-  margin: 10px 0px 0px 10px;
-  width: 70px;
-}
-
-.controls:hover,
-.controls:focus {
-  background: #eee;
-  color: #333;
-}
-
-.frontpageContainer {
-  position: relative;
-}
-
-.buttons {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  z-index: 10;
-  font-size: 0px;
-}
-
-/*--------------------Frontpage----------------------------------------------------------*/
-.forside_over1 {
-  position: relative;
-  top: 25px;
-  margin-left: 20%;
-}
-
-.forside_over2 {
-  position: relative;
-  top: 25px;
-  margin-left: 30%;
-}
-.velkommen_bilde {
-  width: 50%;
-  float: right;
-  margin-left: 80px;
-}
-
-@media screen and (max-witdh: 1036px) {
-  .velkommen_bilde {
-    float: left;
+@media screen and (max-width: 900px) {
+  .historyContainer {
+    display: none;
   }
-}
-
-.for_and {
-  text-align: right;
-}
-
-.dame_disk {
-  width: 40%;
-  float: left;
-  margin-left: 10%;
-  margin-right: 80px;
-}
-.fors-button {
-  appearance: button;
-  text-decoration: none;
-  color: inherit;
-  font-size: 18px;
-  border: 0.7px solid #231f20;
-  border-radius: 0px;
-  background-color: transparent;
-  padding: 10px 30px;
-  box-shadow: -6px 6px 0 0 #fffdfb, -6px 6px 0 0.7px #cc7722;
-  margin-left: 10px;
-}
-.velkommen {
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: 10%;
-  display: inline block;
-}
-
-.vfarge {
-  background-color: #faeddd;
-  padding-bottom: 14%;
-  padding-top: 7%;
-}
-
-.avs_to {
-  margin-right: 20%;
+  .historyContainerMobileView {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
 }
 
 /* Arrangement siden */
@@ -794,7 +655,7 @@ just for appearance; change whatever you want
   }
 }
 
-/* Kontakt oss */
+/*--------------------------------KONTAKT PAGE-------------------------------------------------*/
 
 #ko-img {
   width: 300px;
@@ -826,7 +687,8 @@ just for appearance; change whatever you want
 }
 
 article {
-  width: 85%;
+  width: 60%;
+  margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -838,6 +700,7 @@ article {
 /*---------------------UTLEIE STYLING-----------------------*/
 .utleieText {
   width: 60%;
+  margin-top: 50px;
   margin: auto;
 }
 .utleieText h1 {
@@ -909,10 +772,10 @@ article {
   box-shadow: -6px 6px 0 0 #fffdfb, -6px 6px 0 1px #cc7722;
 }
 
-/*BILDER*/
+/*----------------BILDER------------------*/
 
 .imageContainer {
-  width: 95%;
+  width: 60%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -923,16 +786,24 @@ article {
   flex-direction: row;
   justify-content: space-around;
   margin: auto;
+  width: 100%;
 }
 
 .imageRow img {
-  height: 590px;
   margin: 20px;
+}
+
+.bigPicture {
+  width: 60%;
+}
+
+.miniPicture {
+  width: 30%;
 }
 
 .imageText {
   width: 95%;
-  padding: 20px;
+  margin-left: 20px;
   font-family: "Noe Display", sans-serif;
 }
 
@@ -944,7 +815,12 @@ article {
     margin: auto;
   }
   .miniPicture {
-    width: 388px;
+    width: 90%;
+    margin: auto;
+  }
+  .bigPicture {
+    width: 90%;
+    margin: auto;
   }
 }
 
@@ -955,14 +831,16 @@ article {
 
 .forside_over1 {
   position: relative;
-  top: 25px;
+  margin-top: 50px;
   margin-left: 20%;
+  font-size: 45px;
 }
 
 .forside_over2 {
   position: relative;
-  top: 25px;
-  margin-left: 30%;
+  margin-top: 50px;
+  margin-left: 35%;
+  font-size: 45px;
 }
 
 @media screen and (max-witdh: 1120px) {
@@ -975,10 +853,6 @@ article {
   text-align: right;
 }
 
-.dame_disk {
-  margin-left: 10%;
-  margin-right: 5%;
-}
 .fors-button {
   appearance: button;
   text-decoration: none;
@@ -998,7 +872,7 @@ article {
 
 /* Slideshow container */
 .slideshow-container {
-  max-height: 500px;
+  max-height: 400px;
   position: relative;
   margin: auto;
   margin-top: 5%;
@@ -1008,6 +882,36 @@ article {
 /* Hide the images by default */
 .mySlides {
   display: none;
+  width: 100%;
+  flex-direction: row;
+  height: 375px;
+  background-color: #f5f1ec;
+  justify-content: space-between;
+}
+.mySlides img {
+  height: 50%;
+  margin-left: 15%;
+  display: flex;
+  align-self: center;
+}
+
+.slideBox {
+  width: 45%;
+  height: 100%;
+  background-color: #fffdfb;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 1px;
+  border-color: #231f20;
+  transform: translate(0, 30px);
+}
+.textBoxSlide h3 {
+  padding-bottom: 10px;
+}
+.textBoxSlide {
+  padding: 10%;
+  padding-top: 5%;
+  padding-right: 25%;
 }
 
 /* Next & previous buttons */
@@ -1015,20 +919,19 @@ article {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 55%;
+  top: 45%;
   width: auto;
   margin-left: 2%;
   margin-right: 2%;
-  margin-top: 5%;
-  color: #282828;
-  font-size: 40px;
   user-select: none;
 }
 
 /* Position the "next button" to the right */
+
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
+  align-self: center;
+  /*border-radius: 3px 0 0 3px; */
 }
 
 /* Fading animation */
@@ -1069,25 +972,27 @@ article {
 /* Flex test*/
 .velkommen {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   margin-left: 10%;
   margin-right: 10%;
   margin-bottom: 5%;
   margin-top: 5%;
-  display: inline block;
+  justify-content: space-between;
+  /*display: inline block; */
 }
 
 .velkommen > *.text {
-  flex: 1 1 40%;
+  width: 50%;
+  margin: 0;
+  align-self: center;
 }
 .velkommen > *.forside_bilde {
-  flex: 1 1 60%;
+  align-self: center;
+  width: 50%;
 }
 
 .velkommen_bilde {
   max-width: 100%;
-  max-height: 100%;
-  margin-left: 80px;
 }
 
 .velkommen_text {
@@ -1095,24 +1000,71 @@ article {
 }
 
 .vfarge {
-  display: flex;
-  flex-wrap: wrap;
   background-color: #faeddd;
-  padding-bottom: 5%;
+  display: flex;
+  flex-direction: row;
+  padding-left: 10%;
+  padding-right: 5%;
+  padding-bottom: 10%;
   padding-top: 5%;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.vfarge > *.dame_bilde {
-  flex: 1 1 60%;
+.vfarge > *.dame_disk {
+  width: 40%;
 }
 .vfarge > *.dame_tekst {
-  flex: 1 1 40%;
+  width: 40%;
 }
-.dame-bilde {
-  margin-left: 10%;
-  margin-right: 10%;
+.dame_disk {
+  max-width: 100%;
 }
 
 .dame_tekst {
-  padding-right: 15%;
+  margin-top: 35px;
+  padding-left: 10%;
+  padding-bottom: 5%;
+}
+
+@media screen and (max-width: 900px) {
+  .slideshow-container {
+    display: none;
+  }
+  .vfarge {
+    flex-direction: column-reverse;
+  }
+  .velkommen {
+    flex-direction: column;
+  }
+  .velkommen > *.text {
+    width: 100%;
+    margin: 0;
+    align-self: center;
+  }
+  .velkommen > *.forside_bilde {
+    align-self: center;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .vfarge > *.dame_bilde {
+    width: 100%;
+  }
+  .vfarge > *.dame_tekst {
+    padding-right: 0;
+    padding-left: 0;
+    align-self: center;
+    width: 100%;
+  }
+
+  .forside_over1 {
+    margin-left: 10%;
+    margin-bottom: 0;
+  }
+
+  .forside_over2 {
+    margin-left: 10%;
+    margin-top: 2px;
+  }
 }
