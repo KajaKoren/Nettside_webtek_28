@@ -117,10 +117,25 @@ footer {
   justify-content: space-around;
 }
 
-#kunstBilde {
+@media only screen and (max-width: 600px) {
+  .kunst {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .firstArtColumn {
+    margin-bottom: 0;
+  }
+  .secondArtColumn {
+    margin-top: 0;
+  }
+}
+
+.artWrapper .popupImage {
   width: 100%;
 }
-#kunstBilde:hover {
+
+.artWrapper .popupImage:hover {
   opacity: 0.7;
 }
 .popup {
