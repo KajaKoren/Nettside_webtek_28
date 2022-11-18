@@ -1,5 +1,5 @@
 navbarHTML = `
-<img class="toplogo" src="../Bilder/logo_cafe.svg" alt="logo cafe" />
+<a href="forside.html"><img class="toplogo" src="../Bilder/logo_cafe.svg" alt="logo cafe" /></a>
 <nav>
 <ul class="topnav">
   <li id="forside">
