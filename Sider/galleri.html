@@ -12,35 +12,8 @@
     <link rel="stylesheet" href="../CSS/style.css" />
   </head>
   <body>
-    <img class="toplogo" src="../Bilder/logo_cafe.png" alt="logo cafe" />
-    <nav>
-      <ul class="topnav">
-        <li id="forside">
-          <a href="forside.html">Forside</a>
-        </li>
-        <li id="meny">
-          <a href="meny.html">Meny</a>
-        </li>
-        <li id="arrangement">
-          <a href="arrangement.html">Arrangement</a>
-        </li>
-        <li id="utleie">
-          <a href="utleie.html">Utleie</a>
-        </li>
-        <li id="bilder">
-          <a href="bilder.html">Bilder</a>
-        </li>
-        <li id="kunst">
-          <a class="active" href="galleri.html">Kunst</a>
-        </li>
-        <li id="historie">
-          <a href="historie.html">Historie</a>
-        </li>
-        <li id="kontaktOss">
-          <a href="kontaktOss.html">Kontakt Oss</a>
-        </li>
-      </ul>
-    </nav>
+    <div id="navbar"></div>
+
     <div id="myPopup" class="popup">
       <span class="close">&times;</span>
       <img class="popup-content" id="img01" />
@@ -49,7 +22,7 @@
     <div class="kunst">
       <div class="firstArtColumn">
         <div class="artText">
-          <h1>Kunst</h1>
+          <h2>Kunst</h2>
           <p>For augenblinken har disse kunstnarane utstilling:</p>
         </div>
         <div class="artWrapper">
@@ -108,46 +81,13 @@
         </div>
       </div>
     </div>
-    <!---
-    <div class="wrapper">
-      <footer>
-        <div class="footerclass">
-          <div class="apningstider">
-            <p>Åpningstider</p>
-            <p>Man - fre 11.00 - 19.00</p>
-            <p>Lør - søn 12.00 - 18.00</p>
-          </div>
-          <div class="sosialeMedier">
-            <a
-              href="https://www.instagram.com/explore/locations/326713303/fru-svendsen-kunst-og-kulturkafe/"
-              ><img
-                class="socialmedia"
-                src="../Icons/instagram.png"
-                alt="instagram"
-            /></a>
-            <a href="https://www.facebook.com/profile.php?id=100028706001486"
-              ><img
-                class="socialmedia"
-                src="../Icons/facebook.png"
-                alt="facebook"
-            /></a>
-            <a href="mailto:kaja.koren.97@gmail.com?Subject=MailFromWebsite"
-              ><img class="socialmedia" src="../Icons/email.png" alt="email"
-            /></a>
-          </div>
-        </div>
-        <div class="footerclass">
-          <img class="iconBottom" src="../Bilder/logo.png" alt="logo cafe" />
-        </div>
-        <div class="footerclass">
-          <div id="map"></div>
-        </div>
-      </footer>
-    </div>-->
+    <div id="footer"></div>
+    <script src="../Script/footer.js"></script>
+    <script src="../Script/navbar.js"></script>
     <script src="../Script/popUpPicture.js"></script>
     <script src="../Script/location.js"></script>
     <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2sS3U9flXPDPgXwz7J7g9_uyery9rOQA&callback=initMap&v=weekly"
       defer
     ></script>
   </body>

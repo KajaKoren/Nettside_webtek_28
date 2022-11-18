@@ -21,7 +21,7 @@ footerHTML = `<div class="wrapper">
                         src="../Icons/facebook.svg"
                         alt="facebook"
                 /></a>
-                <a href="mailto:frusvendsenkafe@gmail.com?Subject=MailFromWebsite"
+                <a href="https://no.tripadvisor.com/Restaurant_Review-g1034758-d10532016-Reviews-Fru_Svendsen_Kunst_Og_Kulturkafe-Orsta_More_og_Romsdal_Western_Norway.html"
                     ><img
                         class="tripAdvisor"
                         src="../Icons/Trip_advisor.svg"
