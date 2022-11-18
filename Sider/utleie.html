@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Forside</title>
     <meta charset="utf-8" />
@@ -53,41 +53,29 @@
       method="post"
       enctype="text/plain"
     >
-      <table
-        class="utleieTable"
-        border="0"
-        cellspacing="0"
-        cellpadding="4"
-        width="60%"
-      >
+      <table class="utleieTable">
         <tr>
-          <td width="10%">
-            <div align="left">
-              <b>Fornavn</b>
-            </div>
+          <td class="tdText">
+            <b>Fornavn</b>
           </td>
 
-          <td width="10%">
-            <div align="left">
-              <b>Etternavn</b>
-            </div>
+          <td class="tdText">
+            <b>Etternavn</b>
           </td>
         </tr>
         <tr>
-          <td width="40%">
+          <td class="tdInput">
             <input type="text" name="Fornavn" size="20" />
           </td>
-          <td width="40%">
+          <td class="tdInput">
             <input type="text" name="Etternavn" size="20" />
           </td>
         </tr>
         <tr>
-          <td>
-            <div align="left"><b>E-post:</b></div>
-          </td>
+          <td class="tdText"><b>E-post:</b></td>
 
-          <td>
-            <div align="left"><b>Dato</b></div>
+          <td class="tdText">
+            <b>Dato</b>
           </td>
         </tr>
         <tr>
@@ -98,43 +86,29 @@
             <input type="Date" name="Date" size="20" />
           </td>
         </tr>
-        <table
-          class="bottomInputUtleieTable"
-          width="60%"
-          border="0"
-          cellspacing="0"
-          cellpadding="4"
-        >
-          <tr>
-            <td>
-              <div align="left">
-                <b>Melding</b>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <textarea
-                id="commentField"
-                name="comment"
-                cols="70"
-                wrap="virtual"
-                rows="4"
-              >
-              </textarea>
-            </td>
-          </tr>
-        </table>
-        <table class="utleieSubmit">
-          <tr>
-            <td>&nbsp;</td>
-            <td>
-              <div id="utleieSubmitDiv">
-                <input type="submit" name="SEND" value="SEND" />
-              </div>
-            </td>
-          </tr>
-        </table>
+      </table>
+      <table class="bottomInputUtleieTable">
+        <tr>
+          <td>
+            <b>Melding</b>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <textarea id="commentField" name="comment" cols="70" rows="4">
+            </textarea>
+          </td>
+        </tr>
+      </table>
+      <table class="utleieSubmit">
+        <tr>
+          <td>&nbsp;</td>
+          <td>
+            <div id="utleieSubmitDiv">
+              <input type="submit" name="SEND" value="SEND" />
+            </div>
+          </td>
+        </tr>
       </table>
     </form>
 

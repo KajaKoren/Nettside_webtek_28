@@ -221,13 +221,38 @@ footer {
 
 .utleieTable {
   margin: auto;
+  border: 0;
+  border-spacing: 0;
+  width: 60%;
+}
+
+.utleieTable td {
+  padding: 4;
 }
 
 .utleieTable b {
   font-family: "Noe Display", sans-serif;
 }
+
+.tdText {
+  width: 10%;
+  text-align: left;
+}
+
+.tdInput {
+  width: 40%;
+}
+
 .bottomInputUtleieTable {
   margin: auto;
+  width: 60%;
+  border: 0;
+  border-spacing: 0;
+}
+
+.bottomInputUtleieTable td {
+  padding: 4;
+  text-align: left;
 }
 
 .bottomInputUtleieTable b {
