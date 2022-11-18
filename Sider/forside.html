@@ -8,6 +8,7 @@
 			content="width=device-width, initial-scale=1, minimum-scale=1"
 		/>
 		<link rel="stylesheet" href="../CSS/style.css" />
+		<link rel="icon" type="image/x-icon" href="../Bilder/logo_cafe.svg" />
 	</head>
 	<body>
 		<img class="toplogo" src="../Bilder/logo_cafe.png" alt="logo cafe" />
@@ -39,9 +40,70 @@
 				</li>
 			</ul>
 		</nav>
-		<h1>HEI HER BEGYNNER SIDEN</h1>
-		<p>legg inn text</p>
-		<h1>HER SLUTTER SIDEN</h1>
+		<h1 class="forside_over1">Fru Svendsen</h1>
+		<h1 class="forside_over2">Kunst og Kultur Kafé</h1>
+
+		<div class="frontpageContainer">
+			<ul id="slides">
+				<li class="slide showing">
+					<div class="slidebox">
+						<p style="color: black">Hva skjer om jeg skriver her</p>
+					</div>
+				</li>
+				<li class="slide">
+					<div class="slidebox">
+						<p style="color: black">Hva skjer om jeg skriver her</p>
+					</div>
+				</li>
+				<li class="slide"></li>
+			</ul>
+			<div class="buttons">
+				<button class="controls" id="previous">
+					<img
+						class="leftArrow"
+						src="../Icons/frontpage/left_arrow.svg"
+						alt="left arrow"
+					/>
+				</button>
+
+				<button class="controls" id="pause">&#10074;&#10074;</button>
+
+				<button class="controls" id="next">
+					<img
+						class="rightArrow"
+						src="../Icons/frontpage/right_arrow.svg"
+						alt="left arrow"
+					/>
+				</button>
+			</div>
+		</div>
+		<div class="velkommen">
+			<img class="velkommen_bilde" src="../Bilder/forside/velkommen.png" />
+			<h2>Velkommen</h2>
+
+			<p>
+				Midt i gågata i Ørsta sentrum ligg den gamle, ærverdige Svendsengarden,
+				også kjend som Mellegarden. Kaféen har eit variert tilbod med kaffi,
+				lunsjrettar og kaker. Alt er heimelaga med ein stor porsjon kjærleik.
+				Det meste på menyen kan du få glutenfritt. Menyen inneheld også
+				vegetarrettar. Kaféen har eit variert tilbod med kaffi, lunsjrettar og
+				kaker. Alt er er heimelaga med ein stor porsjon.
+			</p>
+
+			<a href="meny.html" class="fors-button">LES MER</a>
+		</div>
+
+		<div class="vfarge">
+			<img class="dame_disk" src="../Bilder/forside/cafe.jpg" />
+			<p class="avs_to">
+				I hyllene ved disken finn du eit utval av spennande gåver, anten til deg
+				sjølv eller andre. Om sommaren kan du sitje ute, og nye den flotte hagen
+				og sjå på folkelivet i gata. Fru Svendsen har øl- og vinservering.
+				Brennevin kan servast i lukka lag. Me har også ved enkelte høve
+				kulturinnslag som til dømes kunsutstillingar, imtimkonsertar og
+				litteraturkveldar.
+			</p>
+		</div>
 		<div class="wrapper">
 			<footer>
 				<div class="footerclass">
@@ -78,6 +140,7 @@
 			</footer>
 		</div>
 		<script src="../Script/location.js"></script>
+		<script src="../Script/slideshow.js"></script>
 		<script
 			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
 			defer
