@@ -13,11 +13,12 @@
     <div id="navbar"></div>
 
     <div class="utleieText">
-      <h2>Utleie</h2>
+      <h2>Utleige</h2>
       <p>
-        Fru Svendsen er veleigna også for feiring av barnedåp, bryllaup,
-        fødselsdagar, eller minnestundar. Om du ynskjer å leie Fru Svendsen til
-        private arrangement, ta kontakt med oss i skjema nedanfor.
+        Fru Svendsen Kunst og Kulturkafé er veleigna også for feiring av
+        barnedåp, bryllaup, fødselsdagar, eller minnestunder. Om du ynskjer å
+        leige Fru Svendsen til private arrangement, ta kontakt med oss i skjema
+        nedanfor.
       </p>
     </div>
     <form
@@ -37,10 +38,10 @@
         </tr>
         <tr>
           <td class="tdInput">
-            <input type="text" name="Fornavn" size="20" />
+            <input type="text" name="Fornavn" size="20" required />
           </td>
           <td class="tdInput">
-            <input type="text" name="Etternavn" size="20" />
+            <input type="text" name="Etternavn" size="20" required />
           </td>
         </tr>
         <tr>
@@ -52,10 +53,10 @@
         </tr>
         <tr>
           <td>
-            <input type="text" name="Email" size="20" />
+            <input type="email" name="Email" size="20" required />
           </td>
           <td>
-            <input type="Date" name="Date" size="20" />
+            <input type="Date" id="dateInput" name="Date" size="20" />
           </td>
         </tr>
       </table>
@@ -67,7 +68,13 @@
         </tr>
         <tr>
           <td>
-            <textarea id="commentField" name="comment" cols="70" rows="4">
+            <textarea
+              id="commentField"
+              name="comment"
+              cols="70"
+              rows="4"
+              required
+            >
             </textarea>
           </td>
         </tr>
@@ -84,6 +91,7 @@
       </table>
     </form>
     <div id="footer"></div>
+    <script src="../Script/getDate.js"></script>
     <script src="../Script/footer.js"></script>
     <script src="../Script/navbar.js"></script>
     <script src="../Script/location.js"></script>
