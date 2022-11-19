@@ -1,103 +1,104 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Forside</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, minimum-scale=1"
-    />
-    <link rel="stylesheet" href="../CSS/style.css" />
-  </head>
-  <body>
-    <div id="navbar"></div>
+	<head>
+		<title>Utleige</title>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, minimum-scale=1"
+		/>
+		<link rel="stylesheet" href="../CSS/style.css" />
+		<link rel="icon" type="image/x-icon" href="../Bilder/logo_cafe.svg" />
+	</head>
+	<body>
+		<div id="navbar"></div>
 
-    <div class="utleieText">
-      <h2>Utleige</h2>
-      <p>
-        Fru Svendsen Kunst og Kulturkafé er veleigna også for feiring av
-        barnedåp, bryllaup, fødselsdagar, eller minnestunder. Om du ynskjer å
-        leige Fru Svendsen til private arrangement, ta kontakt med oss i skjema
-        nedanfor.
-      </p>
-    </div>
-    <form
-      action="mailto:frusvendsenkafe@gmail.com"
-      method="post"
-      enctype="text/plain"
-    >
-      <table class="utleieTable">
-        <tr>
-          <td class="tdText">
-            <b>Fornavn</b>
-          </td>
+		<div class="utleieText">
+			<h2>Utleige</h2>
+			<p>
+				Fru Svendsen Kunst og Kulturkafé er veleigna også for feiring av
+				barnedåp, bryllaup, fødselsdagar, eller minnestunder. Om du ynskjer å
+				leige Fru Svendsen til private arrangement, ta kontakt med oss i skjema
+				nedanfor.
+			</p>
+		</div>
+		<form
+			action="mailto:frusvendsenkafe@gmail.com"
+			method="post"
+			enctype="text/plain"
+		>
+			<table class="utleieTable">
+				<tr>
+					<td class="tdText">
+						<b>Fornavn</b>
+					</td>
 
-          <td class="tdText">
-            <b>Etternavn</b>
-          </td>
-        </tr>
-        <tr>
-          <td class="tdInput">
-            <input type="text" name="Fornavn" size="20" required />
-          </td>
-          <td class="tdInput">
-            <input type="text" name="Etternavn" size="20" required />
-          </td>
-        </tr>
-        <tr>
-          <td class="tdText"><b>E-post:</b></td>
+					<td class="tdText">
+						<b>Etternavn</b>
+					</td>
+				</tr>
+				<tr>
+					<td class="tdInput">
+						<input type="text" name="Fornavn" size="20" required />
+					</td>
+					<td class="tdInput">
+						<input type="text" name="Etternavn" size="20" required />
+					</td>
+				</tr>
+				<tr>
+					<td class="tdText"><b>E-post:</b></td>
 
-          <td class="tdText">
-            <b>Dato</b>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <input type="email" name="Email" size="20" required />
-          </td>
-          <td>
-            <input type="Date" id="dateInput" name="Date" size="20" />
-          </td>
-        </tr>
-      </table>
-      <table class="bottomInputUtleieTable">
-        <tr>
-          <td>
-            <b>Melding</b>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <textarea
-              id="commentField"
-              name="comment"
-              cols="70"
-              rows="4"
-              required
-            >
-            </textarea>
-          </td>
-        </tr>
-      </table>
-      <table class="utleieSubmit">
-        <tr>
-          <td>&nbsp;</td>
-          <td>
-            <div id="utleieSubmitDiv">
-              <input type="submit" name="SEND" value="SEND" />
-            </div>
-          </td>
-        </tr>
-      </table>
-    </form>
-    <div id="footer"></div>
-    <script src="../Script/getDate.js"></script>
-    <script src="../Script/footer.js"></script>
-    <script src="../Script/navbar.js"></script>
-    <script src="../Script/location.js"></script>
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2sS3U9flXPDPgXwz7J7g9_uyery9rOQA&callback=initMap&v=weekly"
-      defer
-    ></script>
-  </body>
+					<td class="tdText">
+						<b>Dato</b>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="email" name="Email" size="20" required />
+					</td>
+					<td>
+						<input type="Date" id="dateInput" name="Date" size="20" />
+					</td>
+				</tr>
+			</table>
+			<table class="bottomInputUtleieTable">
+				<tr>
+					<td>
+						<b>Melding</b>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<textarea
+							id="commentField"
+							name="comment"
+							cols="70"
+							rows="4"
+							required
+						>
+						</textarea>
+					</td>
+				</tr>
+			</table>
+			<table class="utleieSubmit">
+				<tr>
+					<td>&nbsp;</td>
+					<td>
+						<div id="utleieSubmitDiv">
+							<input type="submit" name="SEND" value="SEND" />
+						</div>
+					</td>
+				</tr>
+			</table>
+		</form>
+		<div id="footer"></div>
+		<script src="../Script/getDate.js"></script>
+		<script src="../Script/footer.js"></script>
+		<script src="../Script/navbar.js"></script>
+		<script src="../Script/location.js"></script>
+		<script
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2sS3U9flXPDPgXwz7J7g9_uyery9rOQA&callback=initMap&v=weekly"
+			defer
+		></script>
+	</body>
 </html>
