@@ -1,69 +1,83 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Bilder</title>
-		<meta charset="utf-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1, minimum-scale=1"
-		/>
-		<link rel="stylesheet" href="../CSS/style.css" />
-		<link rel="icon" type="image/x-icon" href="../Bilder/logo_cafe.svg" />
-	</head>
-	<body>
-		<div id="myPopup" class="popup">
-			<span class="close">&times;</span>
-			<img class="popup-content" id="img01" />
-			<div id="caption"></div>
-		</div>
-		<div id="navbar"></div>
-		<div class="imageContainer">
-			<div class="imageText">
-				<h2>Bilder</h2>
-			</div>
-			<div class="imageRow">
-				<img class="popupImage bigPicture" src="../Bilder/bilder/image 6.png" />
-				<img
-					class="miniPicture popupImage"
-					src="../Bilder/bilder/IMG_3212.png"
-				/>
-			</div>
-			<div class="imageRow">
-				<img
-					class="miniPicture popupImage"
-					src="../Bilder/bilder/IMG_3204.png"
-				/>
-				<img
-					class="popupImage bigPicture"
-					src="../Bilder/bilder/IMG_3189.png"
-				/>
-			</div>
-			<div class="imageRow">
-				<img class="popupImage bigPicture" src="../Bilder/bilder/image 4.png" />
-				<img
-					class="miniPicture popupImage"
-					src="../Bilder/bilder/310013312_783640699608485_2126259326737224505_n 3.png"
-				/>
-			</div>
-			<div class="imageRow">
-				<img
-					class="miniPicture popupImage"
-					src="../Bilder/bilder/311147334_501795248175981_8159304352717456786_n 3.png"
-				/>
-				<img
-					class="popupImage bigPicture"
-					src="../Bilder/bilder/image sofa.png"
-				/>
-			</div>
-		</div>
-		<div id="footer"></div>
-		<script src="../Script/footer.js"></script>
-		<script src="../Script/navbar.js"></script>
-		<script src="../Script/popUpPicture.js"></script>
-		<script src="../Script/location.js"></script>
-		<script
-			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2sS3U9flXPDPgXwz7J7g9_uyery9rOQA&callback=initMap&v=weekly"
-			defer
-		></script>
-	</body>
+  <head>
+    <title>Bilder</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="icon" type="image/x-icon" href="../Bilder/logo_cafe.svg" />
+  </head>
+  <body>
+    <div id="myPopup" class="popup">
+      <span class="close">&times;</span>
+      <img class="popup-content" src=".." alt="popup image" id="img01" />
+      <div id="caption"></div>
+    </div>
+    <div id="navbar"></div>
+    <div class="imageContainer">
+      <div class="imageText">
+        <h2>Bilder</h2>
+      </div>
+      <div class="imageRow">
+        <img
+          class="popupImage bigPicture"
+          src="../Bilder/bilder/image6.png"
+          alt="Dame som handler på kafeen"
+        />
+        <img
+          class="miniPicture popupImage"
+          src="../Bilder/bilder/IMG_3212.png"
+          alt="Innredning på kafe"
+        />
+      </div>
+      <div class="imageRow">
+        <img
+          class="miniPicture popupImage"
+          src="../Bilder/bilder/IMG_3204.png"
+          alt="Sofa og bord på cafe"
+        />
+        <img
+          class="popupImage bigPicture"
+          src="../Bilder/bilder/IMG_3189.png"
+          alt="Piano og bord på kafe"
+        />
+      </div>
+      <div class="imageRow">
+        <img
+          class="popupImage bigPicture"
+          src="../Bilder/bilder/image4.png"
+          alt="Mat på kafe"
+        />
+        <img
+          class="miniPicture popupImage"
+          src="../Bilder/bilder/310013312_783640699608485_2126259326737224505_n3.png"
+          alt="Mat på kafe"
+        />
+      </div>
+      <div class="imageRow">
+        <img
+          class="miniPicture popupImage"
+          src="../Bilder/bilder/311147334_501795248175981_8159304352717456786_n3.png"
+          alt="Mat på kafe"
+        />
+        <img
+          class="popupImage bigPicture"
+          src="../Bilder/bilder/imagesofa.png"
+          alt="Sofa og bord på kafe"
+        />
+      </div>
+    </div>
+    <div id="footer"></div>
+    <script src="../Script/footer.js"></script>
+    <script src="../Script/navbar.js"></script>
+    <script src="../Script/popUpPicture.js"></script>
+    <script src="../Script/location.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2sS3U9flXPDPgXwz7J7g9_uyery9rOQA&callback=initMap&v=weekly"
+      defer
+    ></script>
+  </body>
 </html>

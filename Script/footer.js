@@ -5,7 +5,7 @@ footerHTML = `<div class="wrapper">
             <div class="footertext">
                 <h3>KONTAKT OSS</h3>
                 <p>Tlf: 997 01 635</p>
-                <p>Email: frusvendsenkafe@gmail.com</p>
+                <p>E-post: frusvendsenkafe@gmail.com</p>
             </div>
             <div class="sosialeMedier">
                 <a
