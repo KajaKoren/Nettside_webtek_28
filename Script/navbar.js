@@ -12,7 +12,7 @@ navbarHTML = `
     <a href="arrangement.html">Arrangement</a>
   </li>
   <li id="Utleige">
-    <a href="utleie.html">Utleie</a>
+    <a href="utleie.html">Utleige</a>
   </li>
   <li id="bilder">
     <a href="bilder.html">Bilder</a>
@@ -48,7 +48,7 @@ navbarHTML = `
     <a href="arrangement.html">Arrangement</a>
   </li>
   <li id="Utleige">
-    <a href="utleie.html">Utleie</a>
+    <a href="utleie.html">Utleige</a>
   </li>
   <li id="bilder">
     <a href="bilder.html">Bilder</a>
