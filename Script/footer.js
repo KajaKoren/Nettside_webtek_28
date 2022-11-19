@@ -12,19 +12,19 @@ footerHTML = `<div class="wrapper">
                     href="https://www.instagram.com/explore/locations/326713303/fru-svendsen-kunst-og-kulturkafe/"
                     ><img
                         class="socialMedia"
-                        src="../Icons/insta.svg"
+                        src="../Bilder/footer/insta.svg"
                         alt="instagram"
                 /></a>
                 <a href="https://www.facebook.com/profile.php?id=100028706001486"
                     ><img
                         class="socialMedia"
-                        src="../Icons/facebook.svg"
+                        src="../Bilder/footer/facebook.svg"
                         alt="facebook"
                 /></a>
                 <a href="https://no.tripadvisor.com/Restaurant_Review-g1034758-d10532016-Reviews-Fru_Svendsen_Kunst_Og_Kulturkafe-Orsta_More_og_Romsdal_Western_Norway.html"
                     ><img
                         class="tripAdvisor"
-                        src="../Icons/Trip_advisor.svg"
+                        src="../Bilder/footer/Trip_advisor.svg"
                         alt="Trip Advisor"
                 /></a>
             </div>
