@@ -1021,7 +1021,7 @@ article {
   padding-right: 5%;
   padding-bottom: 10%;
   padding-top: 5%;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -1037,7 +1037,8 @@ article {
 
 .dame_tekst {
   margin-top: 35px;
-  padding-left: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
   padding-bottom: 5%;
 }
 
