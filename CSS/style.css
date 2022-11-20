@@ -683,7 +683,7 @@ div#Sandwich {
   margin: 10px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1600px) {
   #ko-img {
     width: 150px;
     float: none;

@@ -33,7 +33,7 @@ footerHTML = `<div class="wrapper">
     <div class="footerclass">
         <div class="apningstider">
             <h3>ÅPNINGSTIDER</h3>
-            <p>Man - lør 11.00 - 16.00</p>
+            <p>Man - laur 11.00 - 16.00</p>
         </div>
     </div>
     <div class="footerclass">
